@@ -102,9 +102,7 @@ I simulated ficus (which material is jelly) and wolf (which material is sand). T
 
 ## Disucssion
 ### n_grid
-Determines the resolution of the background grid in the MPM solver.
-In ficus simulation, as `n_grid` increases from 30 to 50 (baseline), the PSNR values rise from 38.26 → 38.16 → 38.69 → 38.47 → 76.36 at `n_grid=50`. The improvements below 50 are minor and far from the baseline. However, it is visually stable at low grid resolutions, the reason PSNR is low may be their outputs differ from `n_grid=50`
-It shows PSNR heavily depends on spatial resolution, which means PSNR may not be a good metric to evaluate simulation quality when comparing between `n_grid`.
+ In the ficus simulation, increasing `n_grid` from 30 to 50 (baseline) results in PSNR values of 38.26 → 38.16 → 38.69 → 38.47 → 76.36. Although the simulation appears visually stable even at lower grid resolutions, the PSNR remains low—likely because the outputs differ numerically from the baseline. This suggests that PSNR is highly sensitive to spatial resolution and may not reliably reflect perceptual simulation quality when comparing across different `n_grid` values.
 
 ### substep_dt
 Controls the size of the time step in each MPM update per frame.
