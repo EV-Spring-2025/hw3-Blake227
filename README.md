@@ -41,27 +41,27 @@ I simulated ficus (which material is jelly) and wolf (which material is sand). T
 
 | `substep_dt`      |   PSNR    | GIF       | 
 | ------------- | --------- | --------- |
-| 2e-05         |   38.05   |  ![gif](ficus_substep_dt_2e-05.gif)    |
-| 4e-05         |   38.13   |  ![gif](ficus_substep_dt_4e-05.gif)    | 
-| 6e-05         |   38.34   |  ![gif](ficus_substep_dt_6e-05.gif)    | 
-| 8e-05         |   38.96   |  ![gif](ficus_substep_dt_8e-05.gif)    | 
-| 1e-04 (baseline)        |   76.54   |  ![gif](ficus_substep_dt_1e-04.gif)    | 
+| 2e-05         |   38.05   |  ![gif](images/ficus_substep_dt_2e-05.gif)    |
+| 4e-05         |   38.13   |  ![gif](images/ficus_substep_dt_4e-05.gif)    | 
+| 6e-05         |   38.34   |  ![gif](images/ficus_substep_dt_6e-05.gif)    | 
+| 8e-05         |   38.96   |  ![gif](images/ficus_substep_dt_8e-05.gif)    | 
+| 1e-04 (baseline)        |   76.54   |  ![gif](images/ficus_substep_dt_1e-04.gif)    | 
 
 | `grid_v_damping_scale`      |   PSNR    | GIF       | 
 | ------------- | --------- | --------- |
-| 0.0999            |   38.14   |  ![gif](ficus_grid_v_damping_scale_0.0999.gif)    |
-| 0.4999            |   38.14   |  ![gif](ficus_grid_v_damping_scale_0.4999.gif)    | 
-| 0.9999 (baseline) |   76.44   |  ![gif](ficus_grid_v_damping_scale_0.9999.gif)    | 
-| 1.4999            |   37.65   |  ![gif](ficus_grid_v_damping_scale_1.4999.gif)    | 
-| 1.9999            |   37.65   |  ![gif](ficus_grid_v_damping_scale_1.9999.gif)    | 
+| 0.0999            |   38.14   |  ![gif](images/ficus_grid_v_damping_scale_0.0999.gif)    |
+| 0.4999            |   38.14   |  ![gif](images/ficus_grid_v_damping_scale_0.4999.gif)    | 
+| 0.9999 (baseline) |   76.44   |  ![gif](images/ficus_grid_v_damping_scale_0.9999.gif)    | 
+| 1.4999            |   37.65   |  ![gif](images/ficus_grid_v_damping_scale_1.4999.gif)    | 
+| 1.9999            |   37.65   |  ![gif](images/ficus_grid_v_damping_scale_1.9999.gif)    | 
 
 | `softening`      |   PSNR    | GIF       | 
 | ------------- | --------- | --------- |
-| 0.001         |   76.40   |  ![gif](ficus_softening_0.001.gif)    |
-| 0.005         |   76.11   |  ![gif](ficus_softening_0.005.gif)    | 
-| 0.01          |   76.13   |  ![gif](ficus_softening_0.01.gif)    | 
-| 0.05          |   76.15   |  ![gif](ficus_softening_0.05.gif)    | 
-| 0.1           |   76.36   |  ![gif](ficus_softening_0.1.gif)    | 
+| 0.001         |   76.40   |  ![gif](images/ficus_softening_0.001.gif)    |
+| 0.005         |   76.11   |  ![gif](images/ficus_softening_0.005.gif)    | 
+| 0.01          |   76.13   |  ![gif](images/ficus_softening_0.01.gif)    | 
+| 0.05          |   76.15   |  ![gif](images/ficus_softening_0.05.gif)    | 
+| 0.1           |   76.36   |  ![gif](images/ficus_softening_0.1.gif)    | 
 
 ### Wolf
 | `n_grid`      |   PSNR    | GIF       | 
@@ -74,27 +74,27 @@ I simulated ficus (which material is jelly) and wolf (which material is sand). T
 
 | `substep_dt`      |   PSNR    | GIF       | 
 | ------------- | --------- | --------- |
-| 1e-05         |    42.05   |  ![gif](wolf_substep_dt_1e-05)    |
-| 2e-05 (baseline)         |    69.09  |  ![gif](wolf_substep_dt_2e-05)    | 
-| 4e-05         |    42.08   |  ![gif](wolf_substep_dt_4e-05)    | 
-| 5e-05         |    41.65   |  ![gif](wolf_substep_dt_5e-05)    | 
-| 6e-04         |    39.55   |  ![gif](wolf_substep_dt_6e-05)    | 
+| 1e-05         |    42.05   |  ![gif](images/wolf_substep_dt_1e-05)    |
+| 2e-05 (baseline)         |    69.09  |  ![gif](images/wolf_substep_dt_2e-05)    | 
+| 4e-05         |    42.08   |  ![gif](images/wolf_substep_dt_4e-05)    | 
+| 5e-05         |    41.65   |  ![gif](images/wolf_substep_dt_5e-05)    | 
+| 6e-04         |    39.55   |  ![gif](images/wolf_substep_dt_6e-05)    | 
 
 | `grid_v_damping_scale`      |   PSNR    | GIF       | 
 | ------------- | --------- | --------- |
-| 0.0999            |   40.13   |  ![gif](wolf_grid_v_damping_scale_0.0999.gif)    |
-| 0.4999            |   40.16   |  ![gif](wolf_grid_v_damping_scale_0.4999.gif)    | 
-| 0.9999            |   42.49   |  ![gif](wolf_grid_v_damping_scale_0.9999.gif)    | 
-| 1.4999            |   69.48   |  ![gif](wolf_grid_v_damping_scale_1.4999.gif)    | 
-| 1.9999            |   68.96   |  ![gif](wolf_grid_v_damping_scale_1.9999.gif)    | 
+| 0.0999            |   40.13   |  ![gif](images/wolf_grid_v_damping_scale_0.0999.gif)    |
+| 0.4999            |   40.16   |  ![gif](images/wolf_grid_v_damping_scale_0.4999.gif)    | 
+| 0.9999            |   42.49   |  ![gif](images/wolf_grid_v_damping_scale_0.9999.gif)    | 
+| 1.4999            |   69.48   |  ![gif](images/wolf_grid_v_damping_scale_1.4999.gif)    | 
+| 1.9999            |   68.96   |  ![gif](images/wolf_grid_v_damping_scale_1.9999.gif)    | 
 
 | `softening`      |   PSNR    | GIF       | 
 | ------------- | --------- | --------- |
-| 0.001         |   69.43   |  ![gif](wolf_softening_0.001.gif)    |
-| 0.005         |   69.30   |  ![gif](wolf_softening_0.005.gif)    | 
-| 0.01          |   69.16   |  ![gif](wolf_softening_0.01.gif)    | 
-| 0.05          |   69.33   |  ![gif](wolf_softening_0.05.gif)    | 
-| 0.1           |   69.33   |  ![gif](wolf_softening_0.1.gif)    | 
+| 0.001         |   69.43   |  ![gif](images/wolf_softening_0.001.gif)    |
+| 0.005         |   69.30   |  ![gif](images/wolf_softening_0.005.gif)    | 
+| 0.01          |   69.16   |  ![gif](images/wolf_softening_0.01.gif)    | 
+| 0.05          |   69.33   |  ![gif](images/wolf_softening_0.05.gif)    | 
+| 0.1           |   69.33   |  ![gif](images/wolf_softening_0.1.gif)    | 
 
 # Reference
 ```bibtex
