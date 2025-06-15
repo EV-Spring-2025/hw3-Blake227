@@ -118,6 +118,9 @@ Modulates how the material reduces its internal stress after deformation, emulat
 Values ranging from 0.001 to 0.1 all yield similar PSNR scores (~76), nearly indistinguishable from the baseline.
 For elastic materials like jelly, softening has little effect on physical behavior. Its influence would likely be more pronounced on plastic or metallic materials with permanent deformation.
 
+### BONUS
+To overcome the limitation of manually defined material parameters in PhysGaussian, one could design a parameter inference framework that learns to estimate properties like stiffness, damping, and softening from observed material behavior. This involves collecting a dataset of materials with known parameters and motion data, then training a neural network or differentiable model to predict parameters based on input geometry and time-series observations (e.g., trajectories or rendered frames). A loss function—such as image similarity or trajectory matching—is used to guide training, with optional optimization or meta-learning to generalize across materials. A feedback loop can further refine predictions by comparing simulated outputs to ground truth, enabling PhysGaussian to adapt to unseen materials through data-driven estimation.
+
 
 # Reference
 ```bibtex
