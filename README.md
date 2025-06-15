@@ -74,11 +74,11 @@ I simulated ficus (which material is jelly) and wolf (which material is sand). T
 
 | `substep_dt`      |   PSNR    | GIF       | 
 | ------------- | --------- | --------- |
-| 1e-05         |    42.05   |  ![gif](images/wolf_substep_dt_1e-05)    |
-| 2e-05 (baseline)         |    69.09  |  ![gif](images/wolf_substep_dt_2e-05)    | 
-| 4e-05         |    42.08   |  ![gif](images/wolf_substep_dt_4e-05)    | 
-| 5e-05         |    41.65   |  ![gif](images/wolf_substep_dt_5e-05)    | 
-| 6e-04         |    39.55   |  ![gif](images/wolf_substep_dt_6e-05)    | 
+| 1e-05         |    42.05   |  ![gif](images/wolf_substep_dt_1e-05.gif)    |
+| 2e-05 (baseline)         |    69.09  |  ![gif](images/wolf_substep_dt_2e-05.gif)    | 
+| 4e-05         |    42.08   |  ![gif](images/wolf_substep_dt_4e-05.gif)    | 
+| 5e-05         |    41.65   |  ![gif](images/wolf_substep_dt_5e-05.gif)    | 
+| 6e-04         |    39.55   |  ![gif](images/wolf_substep_dt_6e-05.gif)    | 
 
 | `grid_v_damping_scale`      |   PSNR    | GIF       | 
 | ------------- | --------- | --------- |
