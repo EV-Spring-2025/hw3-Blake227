@@ -96,6 +96,31 @@ I simulated ficus (which material is jelly) and wolf (which material is sand). T
 | 0.05          |   69.33   |  ![gif](images/wolf_softening_0.05.gif)    | 
 | 0.1           |   69.33   |  ![gif](images/wolf_softening_0.1.gif)    | 
 
+
+
+
+
+## Disucssion
+### n_grid
+Determines the resolution of the background grid in the MPM solver.
+In ficus simulation, as `n_grid` increases from 30 to 50 (baseline), the PSNR values rise from 38.26 → 38.16 → 38.69 → 38.47 → 76.36 at `n_grid=50`. The improvements below 50 are minor and far from the baseline. However, it is visually stable at low grid resolutions, the reason PSNR is low may be their outputs differ from `n_grid=50`
+It shows PSNR heavily depends on spatial resolution, which means PSNR may not be a good metric to evaluate simulation quality when comparing between `n_grid`.
+
+### substep_dt
+Controls the size of the time step in each MPM update per frame.
+In the wolf simulation, both increasing and decreasing substep_dt from the baseline lead to lower PSNR. Larger substep_dt causes overly aggressive motion per frame, while smaller values result in under-resolved dynamics. This highlights that substep_dt must be carefully balanced to preserve physical accuracy and visual consistency.
+ 
+### grid_v_damping_scale
+Controls the damping of velocity on the MPM grid after each step.
+Testing values like 0.0999, 0.4999, 0.9999, 1.4999, and 1.9999, the highest PSNR occurs near the baseline (0.9999 = 76.44). Higher or lower values drop significantly (e.g., 1.9999 = 37.65). The damping factor must be carefully balanced. Around 1.0 yields optimal energy decay while preserving realism. Both under- and over-damping result in physical inconsistencies.
+
+
+### softening
+Modulates how the material reduces its internal stress after deformation, emulating plastic or soft materials.
+Values ranging from 0.001 to 0.1 all yield similar PSNR scores (~76), nearly indistinguishable from the baseline.
+For elastic materials like jelly, softening has little effect on physical behavior. Its influence would likely be more pronounced on plastic or metallic materials with permanent deformation.
+
+
 # Reference
 ```bibtex
 @inproceedings{xie2024physgaussian,
